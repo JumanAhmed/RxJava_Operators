@@ -1,15 +1,20 @@
 package com.example.rxjavaoperatorsexamples;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.rxjavaoperatorsexamples.Ex1.JustOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex10.FilterOperatorEx2Activity;
 import com.example.rxjavaoperatorsexamples.Ex2.FromOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex3.JustAndFromDifferenceActivity;
 import com.example.rxjavaoperatorsexamples.Ex4.RangeOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex5.RepeatOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex6.BufferOperatorEx1Activity;
+import com.example.rxjavaoperatorsexamples.Ex7.BufferOperatorEx2Activity;
+import com.example.rxjavaoperatorsexamples.Ex8.DebounceOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex9.FilterOperatorActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,5 +43,27 @@ public class MainActivity extends AppCompatActivity {
 
     public void repeatOperatorExample(View view) {
         startActivity(new Intent(getApplicationContext(), RepeatOperatorActivity.class));
+    }
+
+    public void bufferOperatorExample1(View view) {
+        startActivity(new Intent(getApplicationContext(), BufferOperatorEx1Activity.class));
+    }
+
+    public void bufferOperatorExample2(View view) {
+        startActivity(new Intent(getApplicationContext(), BufferOperatorEx2Activity.class));
+
+    }
+
+    public void debounceOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), DebounceOperatorActivity.class));
+
+    }
+
+    public void filterOperatorEx1(View view) {
+        startActivity(new Intent(getApplicationContext(), FilterOperatorActivity.class));
+    }
+
+    public void filterOperatorEx2(View view) {
+        startActivity(new Intent(getApplicationContext(), FilterOperatorEx2Activity.class));
     }
 }

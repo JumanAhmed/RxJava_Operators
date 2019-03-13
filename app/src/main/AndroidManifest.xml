@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ex5.RepeatOperatorActivity"></activity>
+        <activity android:name=".Ex10.FilterOperatorEx2Activity"></activity>
+        <activity android:name=".Ex9.FilterOperatorActivity" />
+        <activity android:name=".Ex8.DebounceOperatorActivity" />
+        <activity android:name=".Ex7.BufferOperatorEx2Activity" />
+        <activity android:name=".Ex6.BufferOperatorEx1Activity" />
+        <activity android:name=".Ex5.RepeatOperatorActivity" />
         <activity android:name=".Ex4.RangeOperatorActivity" />
         <activity android:name=".Ex3.JustAndFromDifferenceActivity" />
         <activity android:name=".Ex2.FromOperatorActivity" />

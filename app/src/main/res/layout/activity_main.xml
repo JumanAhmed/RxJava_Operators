@@ -71,4 +71,54 @@
         android:onClick="repeatOperatorExample"
         android:text="Repeat() Operator"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="bufferOperatorExample1"
+        android:text="Buffer() Operator Ex1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="bufferOperatorExample2"
+        android:text="Buffer() Operator Ex2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="debounceOperator"
+        android:text="Debounce() Operator"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="filterOperatorEx1"
+        android:text="Filter() Operator Ex1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:onClick="filterOperatorEx2"
+        android:text="Filter() Operator Ex2"/>
+
 </LinearLayout>
