@@ -7,6 +7,15 @@ import android.view.View;
 
 import com.example.rxjavaoperatorsexamples.Ex1.JustOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex10.FilterOperatorEx2Activity;
+import com.example.rxjavaoperatorsexamples.Ex11.SkipOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex12.TakeOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex13.DistinctOperatorEx1Activity;
+import com.example.rxjavaoperatorsexamples.Ex14.DistinctOperatorEx2Activity;
+import com.example.rxjavaoperatorsexamples.Ex15.MaxMinSumAverageOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex16.CountReduceOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex17.MathOperCustomDataTypesActivity;
+import com.example.rxjavaoperatorsexamples.Ex18.ConcatOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex19.MergeOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex2.FromOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex3.JustAndFromDifferenceActivity;
 import com.example.rxjavaoperatorsexamples.Ex4.RangeOperatorActivity;
@@ -65,5 +74,41 @@ public class MainActivity extends AppCompatActivity {
 
     public void filterOperatorEx2(View view) {
         startActivity(new Intent(getApplicationContext(), FilterOperatorEx2Activity.class));
+    }
+
+    public void skipOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), SkipOperatorActivity.class));
+    }
+
+    public void takeOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), TakeOperatorActivity.class));
+    }
+
+    public void distinctOperatorEx1(View view) {
+        startActivity(new Intent(getApplicationContext(), DistinctOperatorEx1Activity.class));
+    }
+
+    public void distinctOperatorEx2(View view) {
+        startActivity(new Intent(getApplicationContext(), DistinctOperatorEx2Activity.class));
+    }
+
+    public void MaxMinSumAverageOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), MaxMinSumAverageOperatorActivity.class));
+    }
+
+    public void CountReduceOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), CountReduceOperatorActivity.class));
+    }
+
+    public void MathematicalOperationonCustomDataTypes(View view) {
+        startActivity(new Intent(getApplicationContext(), MathOperCustomDataTypesActivity.class));
+    }
+
+    public void concatOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), ConcatOperatorActivity.class));
+    }
+
+    public void mergeOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), MergeOperatorActivity.class));
     }
 }

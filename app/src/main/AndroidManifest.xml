@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ex10.FilterOperatorEx2Activity"></activity>
+        <activity android:name=".Ex19.MergeOperatorActivity"></activity>
+        <activity android:name=".Ex18.ConcatOperatorActivity" />
+        <activity android:name=".Ex17.MathOperCustomDataTypesActivity" />
+        <activity android:name=".Ex16.CountReduceOperatorActivity" />
+        <activity android:name=".Ex15.MaxMinSumAverageOperatorActivity" />
+        <activity android:name=".Ex14.DistinctOperatorEx2Activity" />
+        <activity android:name=".Ex13.DistinctOperatorEx1Activity" />
+        <activity android:name=".Ex12.TakeOperatorActivity" />
+        <activity android:name=".Ex11.SkipOperatorActivity" />
+        <activity android:name=".Ex10.FilterOperatorEx2Activity" />
         <activity android:name=".Ex9.FilterOperatorActivity" />
         <activity android:name=".Ex8.DebounceOperatorActivity" />
         <activity android:name=".Ex7.BufferOperatorEx2Activity" />
