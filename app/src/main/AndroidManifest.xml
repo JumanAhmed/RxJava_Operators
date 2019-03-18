@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Ex19.MergeOperatorActivity"></activity>
+        <activity android:name=".Ex23.ConcatMapOperatorActivity"></activity>
+        <activity android:name=".Ex22.SwitchMapOperatorActivity" />
+        <activity android:name=".Ex21.FlatMapOperatorActivity" />
+        <activity android:name=".Ex20.MapOperatorActivity" />
+        <activity android:name=".Ex19.MergeOperatorActivity" />
         <activity android:name=".Ex18.ConcatOperatorActivity" />
         <activity android:name=".Ex17.MathOperCustomDataTypesActivity" />
         <activity android:name=".Ex16.CountReduceOperatorActivity" />

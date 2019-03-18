@@ -17,6 +17,10 @@ import com.example.rxjavaoperatorsexamples.Ex17.MathOperCustomDataTypesActivity;
 import com.example.rxjavaoperatorsexamples.Ex18.ConcatOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex19.MergeOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex2.FromOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex20.MapOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex21.FlatMapOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex22.SwitchMapOperatorActivity;
+import com.example.rxjavaoperatorsexamples.Ex23.ConcatMapOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex3.JustAndFromDifferenceActivity;
 import com.example.rxjavaoperatorsexamples.Ex4.RangeOperatorActivity;
 import com.example.rxjavaoperatorsexamples.Ex5.RepeatOperatorActivity;
@@ -110,5 +114,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void mergeOperator(View view) {
         startActivity(new Intent(getApplicationContext(), MergeOperatorActivity.class));
+    }
+
+    public void mapOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), MapOperatorActivity.class));
+    }
+
+    public void flatMapOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), FlatMapOperatorActivity.class));
+    }
+
+    public void switchMapOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), SwitchMapOperatorActivity.class));
+    }
+
+    public void concatMapOperator(View view) {
+        startActivity(new Intent(getApplicationContext(), ConcatMapOperatorActivity.class));
     }
 }

@@ -225,6 +225,46 @@
             android:onClick="mergeOperator"
             android:text="Merge Operator"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:onClick="mapOperator"
+            android:text="Map Operator"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:onClick="flatMapOperator"
+            android:text="FlatMap Operator"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:onClick="switchMapOperator"
+            android:text="SwitchMap Operator"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:onClick="concatMapOperator"
+            android:text="ConcatMap Operator"/>
+
 
     </LinearLayout>
 
