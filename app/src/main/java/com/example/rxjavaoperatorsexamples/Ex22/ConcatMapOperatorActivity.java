@@ -1,10 +1,11 @@
-package com.example.rxjavaoperatorsexamples.Ex21;
+package com.example.rxjavaoperatorsexamples.Ex22;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.example.rxjavaoperatorsexamples.Ex18.User;
+import com.example.rxjavaoperatorsexamples.Ex21.Address;
 import com.example.rxjavaoperatorsexamples.R;
 
 import java.util.ArrayList;
@@ -20,17 +21,23 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
-public class FlatMapOperatorActivity extends AppCompatActivity {
+public class ConcatMapOperatorActivity extends AppCompatActivity {
 
-    private static final String TAG = FlatMapOperatorActivity.class.getSimpleName();
+    private static final String TAG = ConcatMapOperatorActivity.class.getSimpleName();
     private Disposable disposable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flat_map_operator);
+        setContentView(R.layout.activity_concat_map_operator);
 
-        // some use case scenario of FlatMap
+        // Now consider the same example of FlatMap but replacing the operator with ConcatMap. Technically
+        // the both operators produces the same output but the sequence the data emitted changes.
+        //
+        //ConcatMap() maintains the order of items and waits for the current Observable to complete its job before emitting the next one.
+        //ConcatMap is more suitable when you want to maintain the order of execution.
+
+        // some use case scenario of ConcathMap
 
         // Choose FlatMap when the order is not important. Let’s say you are building a Airline Ticket
         // Fair app that fetches the prices of each airline separately and display on the screen. For this
@@ -40,30 +47,13 @@ public class FlatMapOperatorActivity extends AppCompatActivity {
         // ConcatMap won’t make simultaneous calls in order to maintain item order.
 
 
-        // To better understand FlatMap, consider a scenario where you have a network call to fetch
-        // Users with name and gender. Then you have another network that gives you address of each user.
-        // Now the requirement is to create an Observable that emits Users with name, gender and address
-        // properties. To achieve this, you need to get the users first, then make separate network
-        // call for each user to fetch his address. This can be done easily using FlatMap operator.
-
-
-        // getUsersObservable() : assume it makes a network call and returns an Observable that emits User (name and gender) objects.
-        //getAddressObservable() : assume it makes another network call just to fetch user address. This also returns an Observable that emits User by adding address node to existing name and gender.
-        //flatMap() operator makes getAddressObservable() call each time a User is emitted and returns an Observable that emits User including the address filed.
-        //Finally flatMap() returns an Observable by merging two Observables together.
-        //Thread.sleep(sleepTime); added here to simulate network latency.
-
-
-        // If you run this example you can see the output like below. Here, name and gender are fetched
-        // from one observable and address is fetched from another observable. Also notice that the order
-        // of items is not maintained as source observable. You can see the order changed each time you
-        // run this example.
-
+        // If you run the example, you can see the order is maintained as source
+        // observable i.e Mark, John, Trump, Obama and it always maintains the same order.
 
         getUsersObservable()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .flatMap(new Function<User, Observable<User>>() {
+                .concatMap(new Function<User, Observable<User>>() {
 
                     @Override
                     public Observable<User> apply(User user) throws Exception {
@@ -94,7 +84,6 @@ public class FlatMapOperatorActivity extends AppCompatActivity {
                         Log.e(TAG, "All users emitted!");
                     }
                 });
-
     }
 
 
